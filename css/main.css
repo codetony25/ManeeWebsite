@@ -103,7 +103,9 @@ textarea {
     font-family: 'Quicksand', sans-serif;
 }
 
-
+body {
+    margin-bottom: 60px;
+}
 
 /*-----  End of Global Styles  ------*/
 
@@ -214,24 +216,55 @@ nav ul li a:hover {
 .content h2 {
     font-size: 1.0em;
     text-align: center;
+    opacity: 0;
 }
 
 .content img {
     display: block;
     margin: 0 auto;
     transition: 0.2s;
-}
-
-.content img:hover {
-    opacity: 0.7;
+    opacity: 0;
 }
 
 /*-----  End of Main Content Styles  ------*/
+
+/*====================================
+=            About Styles            =
+====================================*/
+
+
+.about h2 {
+    font-size: 1.1em;
+}
+
+.contact a {
+    color: #66E1CD;
+    transition: 0.2s;
+}
+
+.contact p {
+    padding: 8px;
+    text-align: left;
+    line-height: 1.8em;
+}
+
+.contact a:hover {
+    color: green;
+    text-decoration: none;
+}
+
+/*-----  End of About Styles  ------*/
+
+
 
 
 /*=====================================
 =            Footer Styles            =
 =====================================*/
+
+footer {
+    background-color: white;
+}
 
 footer p {
     text-align: center;
@@ -276,6 +309,24 @@ footer p {
     .main-content {
         text-align: left;
     }
+    /* About Styles */
+    .about {
+        height: 100%;
+    }
+    .about p {
+        padding: 5px;
+        margin-top: 20px;
+        text-align: left;
+    }
+    .about h2 {
+        font-size: 1.4em;
+    }
+    .social {
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-bottom: 50px;
+    }
+
 }
 
 
