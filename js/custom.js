@@ -36,60 +36,63 @@
     $('.moneyshowcase').hide();
     $('.repackshowcase').hide();
     $('.winelistshowcase').hide();
+    $('.mapshowcase').hide();
+    $('.postershowcase').hide();
+    $('.jarshowcase').hide();
 
 
     //Click to slide down bookla
     $('.bookla').click(function(evt){
     	evt.preventDefault();
     	$('.theshowcase').fadeOut('fast');
-    	if($('.booklashowcase').is(':visible')) {
-    		$('.booklashowcase').slideUp('slow');
-    	} else {
-    		$('.booklashowcase').slideDown('slow');
-    	}
+    	$('.booklashowcase').slideDown('slow');
     });//end on click
 
     //Click to slide down calender
     $('.calender').click(function(evt){
     	evt.preventDefault();
     	$('.theshowcase').fadeOut('fast');
-    	if($('.calendershowcase').is(':visible')) {
-    		$('.calendershowcase').slideUp('slow');
-    	} else {
-    		$('.calendershowcase').slideDown('slow');
-    	}
+    	$('.calendershowcase').slideDown('slow');
     });//end on click
 
     //Click to slide down repack
     $('.repack').click(function(evt){
     	evt.preventDefault();
     	$('.theshowcase').fadeOut('fast');
-    	if($('.repackshowcase').is(':visible')) {
-    		$('.repackshowcase').slideUp('slow');
-    	} else {
-    		$('.repackshowcase').slideDown('slow');
-    	}
+    	$('.repackshowcase').slideDown('slow');
     });//end on click
 
     //Click to slide down winelist
     $('.winelist').click(function(evt){
     	evt.preventDefault();
     	$('.theshowcase').fadeOut('fast');
-    	if($('.winelistshowcase').is(':visible')) {
-    		$('.winelistshowcase').slideUp('slow');
-    	} else {
-    		$('.winelistshowcase').slideDown('slow');
-    	}
+    	$('.winelistshowcase').slideDown('slow');
     });//end on click
 
     //Click to slide down money
     $('.money').click(function(evt){
     	evt.preventDefault();
     	$('.theshowcase').fadeOut('fast');
-    	if($('.moneyshowcase').is(':visible')) {
-    		$('.moneyshowcase').slideUp('slow');
-    	} else {
-    		$('.moneyshowcase').slideDown('slow');
-    	}
+        $('.moneyshowcase').slideDown('slow');
     });//end on click
- }); 
+
+    //Click to slide down money
+    $('.map').click(function(evt){
+        evt.preventDefault();
+        $('.theshowcase').fadeOut('fast');
+        $('.mapshowcase').slideDown('slow');
+    });//end on click
+
+    $('.poster').click(function(evt){
+        evt.preventDefault();
+        $('.theshowcase').fadeOut('fast');
+        $('.postershowcase').slideDown('slow');
+    });//end on click
+
+    $('.jar').click(function(evt){
+        evt.preventDefault();
+        $('.theshowcase').fadeOut('fast');
+        $('.jarshowcase').slideDown('slow');
+    });//end on click
+
+ }); //end ready
